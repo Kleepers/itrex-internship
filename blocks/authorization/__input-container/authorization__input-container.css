@@ -1,0 +1,18 @@
+.authorization__input-container {
+    margin-bottom: 40px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #DCE0EC;
+    box-sizing: border-box;
+    background: white;
+    height: 56px;
+    overflow: hidden;
+}
+
+.authorization__input-container:last-of-type {
+    margin-bottom: 64px;
+}
+
+
