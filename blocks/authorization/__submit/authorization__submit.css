@@ -1,0 +1,29 @@
+.authorization__submit {
+    margin-bottom: 11.71vh;
+    height: 56px;
+    width: 146px;
+    background-color: #7297FF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 24px 0;
+    box-sizing: border-box;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: 0.3s background-color ease-in-out;
+}
+
+.authorization__submit:active, .authorization__submit:focus {
+    border: none;
+    outline:none;
+}
+
+.authorization__submit:hover {
+    background-color: #7288ff ;
+}

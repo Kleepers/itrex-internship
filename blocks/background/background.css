@@ -1,0 +1,7 @@
+.background {
+    width: calc(100vw - 560px);
+    height: 100vh;
+    background-image: url("../../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
