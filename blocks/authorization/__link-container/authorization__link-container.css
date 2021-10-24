@@ -1,0 +1,14 @@
+.authorization__link-container {
+    font-size: 15px;
+    line-height: 24px;
+    color: #A1ABC9;
+    margin: auto 0 80px;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__link-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto 0 44px;
+    }
+}

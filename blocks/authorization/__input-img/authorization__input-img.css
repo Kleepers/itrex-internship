@@ -1,4 +1,10 @@
 .authorization__input-img {
-    padding-left: 26px;
-    position: relative;
+    position: absolute;
+    left: 26px;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__input-img {
+        left: 19px;
+    }
 }

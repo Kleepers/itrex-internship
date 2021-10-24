@@ -1,16 +1,16 @@
 .authorization__submit {
-    margin-bottom: 11.71vh;
     height: 56px;
-    width: 146px;
+    margin-right: auto;
     background-color: #7297FF;
     border-radius: 8px;
+    font-family: Poppins-SemiBold, sans-serif;
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 24px 0;
+    padding: 0 32px 0 24px;
     box-sizing: border-box;
     border: none;
     cursor: pointer;
@@ -24,4 +24,13 @@
 
 .authorization__submit:hover {
     background-color: #7288ff ;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__submit {
+        font-size: 15px;
+        line-height: 130%;
+        padding: 0 24px 0 16px;
+        height: 48px;
+    }
 }

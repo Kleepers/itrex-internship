@@ -4,5 +4,11 @@
     font-weight: 400;
     display: flex;
     position: relative;
-    overflow: hidden;
+}
+
+
+@media screen and (max-width: 559px) {
+    .page {
+        flex-direction: column;
+    }
 }

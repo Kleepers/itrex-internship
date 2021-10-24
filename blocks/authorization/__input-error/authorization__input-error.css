@@ -1,0 +1,12 @@
+.authorization__input-error {
+    color: #F6657F;
+    font-size: 13px;
+    line-height: 120%;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__input-error {
+        margin-top: 15px;
+    }
+}

@@ -5,8 +5,16 @@
     font-weight: 600;
     margin-left: 12px;
     transition: 0.3s color ease-in-out;
+    font-size: 15px;
+    line-height: 24px;
 }
 
 .authorization__link:hover {
     color: #7288ff ;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__link {
+        margin: 0;
+    }
 }

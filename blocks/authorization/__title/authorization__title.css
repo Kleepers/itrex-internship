@@ -4,5 +4,18 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 110%;
-    margin-top: 16.4vh;
+    margin-top: 168px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__title {
+        margin-top: 4.5vh;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
 }

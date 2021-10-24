@@ -1,0 +1,14 @@
+.authorization__forgot-pss {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #7297FF;
+    text-decoration-line: underline;
+    cursor: pointer;
+    transition: 0.3s color ease-in-out;
+}
+
+.authorization__forgot-pss:hover {
+    color: #7288ff ;
+}

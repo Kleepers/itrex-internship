@@ -1,16 +1,15 @@
 .authorization__input {
+    width: 100%;
     font-size: 17px;
     line-height: 24px;
-    width: 100%;
-    border: none;
-    height: 56px;
-    margin-left: 19px;
-    padding: 0;
+    border: 1px solid #DCE0EC;
+    padding: 15px 40px 15px 64px;
+    border-radius: 8px;
 }
 
 .authorization__input:focus, .authorization__input:active {
+    border: 1px solid #7297FF;
     outline: none;
-    border: none;
 }
 
 .authorization__input::placeholder {
@@ -20,5 +19,17 @@
     color: #A1ABC9;
 }
 
+
+@media screen and (max-width: 559px) {
+    .authorization__input {
+        padding: 9px 35px 9px 50px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .authorization__input::placeholder {
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
 
 
