@@ -1,5 +1,6 @@
 .authorization__submit {
     height: 56px;
+    min-height: 56px;
     margin-right: auto;
     background-color: #7297FF;
     border-radius: 8px;

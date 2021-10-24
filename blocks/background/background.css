@@ -5,6 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
+    min-height: 750px;
 }
 
 
@@ -14,5 +15,6 @@
         height: 242px;
         position: absolute;
         top: 0;
+        min-height: auto;
     }
 }
