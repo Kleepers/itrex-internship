@@ -3,19 +3,23 @@
     min-height: 56px;
     margin-right: auto;
     background-color: #7297FF;
+    background-image: url("../../../images/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: 8px 13px;
+    background-position: right 32px top 21px;
     border-radius: 8px;
-    font-family: Poppins-SemiBold, sans-serif;
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 32px 0 24px;
+    padding: 0 56px 0 24px;
     box-sizing: border-box;
     border: none;
     cursor: pointer;
     transition: 0.3s background-color ease-in-out;
+    margin-bottom: 32px;
 }
 
 .authorization__submit:active, .authorization__submit:focus {
@@ -29,9 +33,11 @@
 
 @media screen and (max-width: 559px) {
     .authorization__submit {
+        background-position: right 24px top 17px;
         font-size: 15px;
         line-height: 130%;
-        padding: 0 24px 0 16px;
+        padding: 0 48px 0 16px;
         height: 48px;
+        min-height: 48px;
     }
 }

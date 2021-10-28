@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'Poppins';
     font-weight: 400;
@@ -11,7 +12,18 @@
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('Poppins-Medium.eot');
+    src: url('Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Poppins-Medium.woff') format('woff'),
+    url('Poppins-Medium.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Poppins';
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -20,3 +32,4 @@
     url('Poppins-SemiBold.woff') format('woff'),
     url('Poppins-SemiBold.ttf') format('truetype')
 }
+

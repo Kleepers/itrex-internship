@@ -13,6 +13,11 @@
     color: #7288ff ;
 }
 
+.authorization__submit + .authorization__link {
+    margin-left: 0;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 559px) {
     .authorization__link {
         margin: 0;

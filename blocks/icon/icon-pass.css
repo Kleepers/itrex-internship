@@ -1,0 +1,11 @@
+.icon-pass {
+    top: 18px;
+    left: 28px;
+}
+
+@media screen and (max-width: 559px) {
+    .icon-pass {
+        top: 10px;
+        left: 20px;
+    }
+}

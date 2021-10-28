@@ -1,24 +1,18 @@
-.authorization__input-container {
+.input-container {
     margin-bottom: 40px;
     position: relative;
     background: white;
-    height: 56px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.authorization__input-container:last-of-type {
-    margin-bottom: 64px;
-}
-
 
 @media screen and (max-width: 559px) {
-    .authorization__input-container {
+    .input-container {
         margin-bottom: 24px;
-        height: 40px;
     }
-    .authorization__input-container:last-of-type {
+    .input-container:last-of-type {
         margin-bottom: 32px;
     }
 }

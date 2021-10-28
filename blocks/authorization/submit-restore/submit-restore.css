@@ -1,0 +1,9 @@
+.submit-restore {
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 559px) {
+    .submit-restore {
+        margin-top: 32px;
+    }
+}
