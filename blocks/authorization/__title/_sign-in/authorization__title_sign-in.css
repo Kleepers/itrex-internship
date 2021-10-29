@@ -1,5 +1,5 @@
 .authorization__title_sign-in {
-    margin-top: 25.8vh;
+    margin-top: var(--title-margin-top);
 }
 
 @media screen and (max-width: 559px) {

@@ -16,18 +16,18 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 24px;
-    color: #A1ABC9;
+    color: var(--grey-medium);
 }
 
 
 @media screen and (max-width: 559px) {
     .input {
         padding: 9px 35px 9px 48px;
-        font-size: 15px;
+        font-size: var(--s-font-size);
         line-height: 21px;
     }
     .input::placeholder {
-        font-size: 15px;
+        font-size: var(--s-font-size);
         line-height: 21px;
     }
 }

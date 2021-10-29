@@ -12,14 +12,17 @@
 @import url('../../blocks/authorization/__title/authorization__title.css');
 @import url('../../blocks/input/input-container/input-container.css');
 @import url('../../blocks/input/input-img/input-img.css');
-@import url('../../blocks/input/input-btn/input-btn.css');
+@import url('../../blocks/icon/icon-eye.css');
 @import url('../../blocks/authorization/__title/_sign-in/authorization__title_sign-in.css');
 @import url('../../blocks/input/input-error/input-error.css');
-@import url('../../blocks/icon/icon-confirmPass.css');
+@import url('../../blocks/icon/icon-confirm-pass.css');
 @import url('../../blocks/icon/icon-mail.css');
 @import url('../../blocks/icon/icon-pass.css');
 @import url('../../blocks/icon/icon-user.css');
 @import url('../../blocks/input/input-invalid/input-invalid.css');
+@import url('../../blocks/icon/icon-submit.css');
+@import url('../../blocks/variables.css');
+
 
 
 @import url('../../blocks/background/background.css');

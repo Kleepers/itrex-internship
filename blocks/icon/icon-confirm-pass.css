@@ -1,10 +1,10 @@
-.icon-confirmPass {
+.icon-confirm-pass {
     top: 23px;
     left: 29px;
 }
 
 @media screen and (max-width: 559px) {
-    .icon-confirmPass {
+    .icon-confirm-pass {
         top: 15px;
         left: 21px;
     }
