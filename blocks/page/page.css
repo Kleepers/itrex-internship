@@ -1,0 +1,23 @@
+.page {
+    font-family: Poppins, sans-serif, Arial;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+    background-image: url("../../images/bg.jpg");
+    background-size: auto 1024px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-height: 1025px) {
+    .page {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .page {
+        flex-direction: column;
+        background-size: auto 242px;
+    }
+}

@@ -1,0 +1,19 @@
+.authorization__text {
+    font-size: 15px;
+    line-height: 130%;
+    color: #A1ABC9;
+    margin-bottom: 40px;
+    max-width: 368px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__text {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .authorization__text ~ .authorization__submit {
+        font-size: 17px;
+        line-height: 24px;
+    }
+}

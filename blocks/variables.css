@@ -1,0 +1,13 @@
+:root{
+    --title-margin-top: 25.8vh;
+    --auth-item-margin-bottom: 40px;
+    --grey-medium: #A1ABC9;
+    --s-font-size: 15px;
+}
+
+@media screen and (max-width: 559px) {
+    :root {
+        --auth-item-margin-bottom: 24px;
+        --title-margin-top: 32px;
+    }
+}

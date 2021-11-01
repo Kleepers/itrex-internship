@@ -1,0 +1,11 @@
+.icon-user {
+    top: 18px;
+    left: 26px;
+}
+
+@media screen and (max-width: 559px) {
+    .icon-user {
+        top: 10px;
+        left: 18px;
+    }
+}

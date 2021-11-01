@@ -1,0 +1,9 @@
+.authorization__title_sign-in {
+    margin-top: var(--title-margin-top);
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__title_sign-in {
+        margin-top: 32px;
+    }
+}

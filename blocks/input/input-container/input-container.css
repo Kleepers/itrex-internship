@@ -1,0 +1,23 @@
+.input-container {
+    margin-bottom: var(--auth-item-margin-bottom);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-container:last-of-type {
+    margin-bottom: 64px;
+}
+
+
+@media screen and (max-width: 559px) {
+    .input-container {
+        margin-bottom: var(--auth-item-margin-bottom);
+    }
+    .input-container:last-of-type {
+        margin-bottom: 32px;
+    }
+}
+
+
