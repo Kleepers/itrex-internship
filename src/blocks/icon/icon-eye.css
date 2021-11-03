@@ -1,0 +1,16 @@
+.icon-eye {
+    cursor: pointer;
+    position: absolute;
+    right: 26px;
+    top: 18px;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/passwordInvisible.svg");
+}
+
+@media screen and (max-width: 559px) {
+    .icon-eye {
+        right: 18px;
+        top: 10px;
+    }
+}

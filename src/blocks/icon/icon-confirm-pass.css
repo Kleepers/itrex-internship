@@ -1,0 +1,14 @@
+.icon-confirm-pass {
+    top: 23px;
+    left: 29px;
+    width: 14px;
+    height: 10px;
+    background: url("../../images/ConfirmPassword.svg");
+}
+
+@media screen and (max-width: 559px) {
+    .icon-confirm-pass {
+        top: 15px;
+        left: 21px;
+    }
+}

@@ -1,0 +1,8 @@
+.authorization__submit_disabled {
+    background-color: #DCE0EC;
+    color: #A1ABC9;
+}
+.authorization__submit_disabled:hover {
+    background-color: #DCE0EC;
+    cursor: default;
+}
