@@ -2,6 +2,7 @@ import {
   restorePasswordInputList, signInInputList, signUpInputList, validationSettings,
 } from "./constants";
 import FormValidator from "./FormValidator";
+import {clinicTemplate} from "./clinic";
 
 export default class View {
   constructor() {
@@ -94,9 +95,17 @@ export default class View {
     this.validator.enableValidation();
   }
 
+  renderClinic () {
+    this.clearContent()
+    this.page.classList.add('page_clinic')
+    this.page.innerHTML = clinicTemplate
+  }
+
   clearContent() {
     if (this.page.firstChild) {
       this.page.removeChild(this.page.firstChild);
+      this.page.innerHTML = ''
+      this.page.classList.remove('page_clinic')
     }
   }
 
@@ -130,6 +139,13 @@ export default class View {
     wrapper.append(inputIcon, input, error);
     if (type === "password") {
       const button = this.createElement("span", "icon-eye");
+      button.addEventListener('click', () => {
+        if(input.type === 'password') {
+          input.type = 'text'
+        } else {
+          input.type = 'password'
+        }
+      })
       wrapper.append(button);
     }
     return wrapper;

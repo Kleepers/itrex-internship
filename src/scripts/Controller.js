@@ -5,6 +5,7 @@ export default class Controller {
   }
 
   render(url) {
+
     if (url === "/" || url === "/signup") {
       this.view.renderSignUp();
       this.view.form.addEventListener("submit", (e) => {
@@ -19,7 +20,9 @@ export default class Controller {
           this.model.data[evt.target.name] = evt.target.value;
         });
       });
-    } else if (url === "/signin") {
+    }
+
+    else if (url === "/signin") {
       this.view.renderSignIn();
       this.view.form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -34,8 +37,14 @@ export default class Controller {
           this.model.data[evt.target.name] = evt.target.value;
         });
       });
-    } else if (url === "/restore-pass") {
+    }
+
+    else if (url === "/restore-pass") {
       this.view.renderRestorePass();
+    }
+
+    else if (url === '/clinic') {
+      this.view.renderClinic();
     }
 
     document.querySelectorAll("a").forEach((el) => {

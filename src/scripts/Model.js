@@ -13,6 +13,6 @@ export default class Model {
 
   signIn(currentUser) {
     this.users = JSON.parse(localStorage.getItem("users")) || [];
-    return this.users.some((user) => user.email === currentUser.email);
+    return this.users.some((user) => (user.email === currentUser.email) && (user.password === currentUser.password));
   }
 }
