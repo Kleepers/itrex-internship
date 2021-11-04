@@ -1,0 +1,25 @@
+.clinic__content-nav-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 12px;
+    min-width: 160px;
+    color: #7297FF;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .clinic__content-nav-btn {
+        min-width: 120px;
+        margin-right: 24px;
+    }
+}
+
+.clinic__content-nav-btn:last-of-type {
+    margin-right: 0;
+}

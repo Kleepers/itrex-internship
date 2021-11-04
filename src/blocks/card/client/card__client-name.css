@@ -1,0 +1,7 @@
+.card__client-name {
+    grid-area: name;
+    margin: 0;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 130%;
+}

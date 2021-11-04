@@ -1,0 +1,11 @@
+.clinic__content-config-wrapper {
+    display: none;
+}
+
+@media screen and (min-width: 779px) {
+    .clinic__content-config-wrapper {
+        display: flex;
+        margin-right: 60px;
+    }
+
+}
