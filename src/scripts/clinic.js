@@ -1,9 +1,7 @@
-import Logo from '../images/clinic.png'
-import avatar from '../images/avatar.png'
+import Logo from "../images/clinic.png";
+import avatar from "../images/avatar.png";
 
-
-const clinicTemplate =
-    `
+const clinicTemplate = `
   <header class="clinic__header">
 
     <img class="clinic__logo" src='${Logo}' alt="logo">
@@ -185,6 +183,6 @@ const clinicTemplate =
       </article>
     </div>
   </main>
-`
+`;
 
-export {clinicTemplate}
+export { clinicTemplate };
