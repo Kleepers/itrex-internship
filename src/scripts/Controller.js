@@ -9,7 +9,7 @@ export default class Controller {
       this.view.renderSignUp();
       this.view.form.addEventListener("submit", (e) => {
         e.preventDefault();
-        if (this.model.signUp(this.model.data)) {
+        if (this.model.signUp()) {
           window.history.pushState({ url }, null, "signin");
           this.render("/signin");
         }
@@ -23,7 +23,7 @@ export default class Controller {
       this.view.renderSignIn();
       this.view.form.addEventListener("submit", (e) => {
         e.preventDefault();
-        if (this.model.signIn(this.model.data)) {
+        if (this.model.signIn()) {
           window.history.pushState({ url }, null, "clinic");
           this.render("/clinic");
         }

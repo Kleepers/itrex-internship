@@ -1,13 +1,13 @@
 .authorization__title {
-    margin-bottom: var(--auth-item-margin-bottom);
+    margin-bottom: 40px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 110%;
-    margin-top: 16.4vh;
     height: 32px;
     display: flex;
     align-items: center;
+    margin-top: 16.4vh;
 }
 
 @media screen and (max-width: 559px) {

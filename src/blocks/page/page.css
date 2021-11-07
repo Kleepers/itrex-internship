@@ -7,13 +7,7 @@
     background-image: url("../../images/bg.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
-    box-sizing: content-box;
-}
-
-@media screen and (min-height: 1025px) {
-    .page {
-        background-size: cover;
-    }
+    background-size: cover;
 }
 
 @media screen and (max-width: 559px) {

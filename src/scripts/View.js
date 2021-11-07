@@ -1,4 +1,5 @@
 import {
+  passwordMatchError,
   restorePasswordInputList, signInInputList, signUpInputList, validationSettings,
 } from "./constants";
 import FormValidator from "./FormValidator";
@@ -9,6 +10,20 @@ export default class View {
     this.app = this.getElement("#root");
     this.page = this.createElement("div", "page");
     this.app.append(this.page);
+    this.signUpInputList = signUpInputList;
+    this.signInInputList = signInInputList;
+    this.restorePasswordInputList = restorePasswordInputList;
+    this.form = null;
+    this.title = null;
+    this.link = null;
+    this.inputs = null;
+  }
+
+  createSubmit(text) {
+    this.submit = this.createElement("button", "authorization__submit");
+    this.submit.textContent = text;
+    this.submit_icon = this.createElement("span", "icon-submit");
+    this.submit.append(this.submit_icon);
   }
 
   renderSignUp() {
@@ -16,11 +31,7 @@ export default class View {
     this.form = this.createElement("form", "authorization");
     this.title = this.createElement("h1", "authorization__title");
     this.title.textContent = "Sign Up";
-    this.submit = this.createElement("button", "authorization__submit");
-    this.submit.textContent = "Sign Up";
-    this.submit_icon = this.createElement("span", "icon-submit");
-    this.submit.append(this.submit_icon);
-    this.signUpInputList = signUpInputList;
+    this.createSubmit("Sign Up");
     this.link_wrapper = this.createElement("p", "authorization__link-wrapper");
     this.link_wrapper.textContent = "Already have an account? ";
     this.link = this.createElement("a", "authorization__link");
@@ -35,6 +46,14 @@ export default class View {
     this.page.append(this.form);
     this.validator = new FormValidator(validationSettings, this.form);
     this.validator.enableValidation();
+    this.passwordInput = this.form.querySelector("#password");
+    this.confirmPassword = this.form.querySelector("#confirmPassword");
+
+    this.confirmPassword.addEventListener("input", () => {
+      if (this.passwordInput.value !== this.confirmPassword.value) {
+        this.validator.showInputError(this.confirmPassword, passwordMatchError);
+      }
+    });
   }
 
   renderSignIn() {
@@ -43,11 +62,7 @@ export default class View {
     this.title = this.createElement("h1", "authorization__title");
     this.title.classList.add("authorization__title_sign-in");
     this.title.textContent = "Sign In";
-    this.submit = this.createElement("button", "authorization__submit");
-    this.submit.textContent = "Sign In";
-    this.submit_icon = this.createElement("span", "icon-submit");
-    this.submit.append(this.submit_icon);
-    this.signInInputList = signInInputList;
+    this.createSubmit("Sign In");
     this.link_wrapper = this.createElement("p", "authorization__link-wrapper");
     this.link_wrapper.textContent = "Dont have an account? ";
     this.link = this.createElement("a", "authorization__link");
@@ -80,11 +95,7 @@ export default class View {
     this.title_wrapper.append(this.title_img, this.title);
     this.text = this.createElement("p", "authorization__text");
     this.text.textContent = "Please use your email address, and we’ll send you the link to reset your password";
-    this.submit = this.createElement("button", "authorization__submit");
-    this.submit.textContent = "Send Reset Link";
-    this.submit_icon = this.createElement("span", "icon-submit");
-    this.submit.append(this.submit_icon);
-    this.restorePasswordInputList = restorePasswordInputList;
+    this.createSubmit("Send Reset Link");
     this.inputs = this.restorePasswordInputList.map((input) => this.createInput(input));
     this.inputs.forEach((input) => this.form.append(input));
     this.form.prepend(this.text);
@@ -121,7 +132,7 @@ export default class View {
 
   createInput(element) {
     const {
-      icon, placeholder, type, name,
+      icon, placeholder, type, name, minLength,
     } = element;
     const wrapper = this.createElement("div", "input-wrapper");
     const inputIcon = this.createElement("span", "input-img");
@@ -129,11 +140,13 @@ export default class View {
     const input = this.createElement("input", "input");
     input.type = type;
     input.placeholder = placeholder;
+    input.autocomplete = "off";
     input.name = name;
     input.id = name;
-    input.minLength = 2;
+    input.minLength = minLength;
     input.required = true;
     input.noValidate = true;
+
     const error = this.createElement("span", "input-error");
     error.classList.add(`${name}-error`);
     wrapper.append(inputIcon, input, error);
