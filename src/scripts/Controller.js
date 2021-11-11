@@ -1,3 +1,5 @@
+import {signInError} from "./constants";
+
 export default class Controller {
   constructor(model, view) {
     this.model = model;
@@ -9,10 +11,9 @@ export default class Controller {
       this.view.renderSignUp();
       this.view.form.addEventListener("submit", (e) => {
         e.preventDefault();
-        if (this.model.signUp()) {
-          window.history.pushState({ url }, null, "signin");
-          this.render("/signin");
-        }
+        this.model.signUp()
+        window.history.pushState({ url }, null, "signin");
+        this.render("/signin");
       });
       this.view.form.querySelectorAll(".input").forEach((input) => {
         input.addEventListener("change", (evt) => {
@@ -21,11 +22,16 @@ export default class Controller {
       });
     } else if (url === "/signin") {
       this.view.renderSignIn();
+      const emailInput = this.view.form.querySelector('#email');
+      const passInput = this.view.form.querySelector('#password');
       this.view.form.addEventListener("submit", (e) => {
         e.preventDefault();
         if (this.model.signIn()) {
           window.history.pushState({ url }, null, "clinic");
           this.render("/clinic");
+        } else {
+          this.view.validator.showInputError(emailInput,signInError);
+          this.view.validator.showInputError(passInput,signInError);
         }
       });
       this.view.form.querySelectorAll(".input").forEach((input) => {

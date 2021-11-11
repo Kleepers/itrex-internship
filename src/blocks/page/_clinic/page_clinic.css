@@ -5,6 +5,7 @@
     padding-left: 64px;
     padding-bottom: 48px;
     box-sizing: border-box;
+    max-height: 100vh;
 }
 
 

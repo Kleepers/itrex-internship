@@ -7,7 +7,7 @@
     height: 32px;
     display: flex;
     align-items: center;
-    margin-top: 16.4vh;
+    margin-top: 16.4vh
 }
 
 @media screen and (max-width: 559px) {

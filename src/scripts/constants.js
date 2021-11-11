@@ -72,8 +72,11 @@ const validationSettings = ({
   errorClass: "input-error",
 });
 
-const passwordMatchError = "Пароли не совпадают";
+const passwordMatchError = "Passwords do not match";
+const signInError = 'Incorrect email/password';
+
+const admin = { email: "admin@admin.ru", password: "admin01" }
 
 export {
-  validationSettings, restorePasswordInputList, signInInputList, signUpInputList, passwordMatchError,
+  validationSettings, restorePasswordInputList, signInInputList, signUpInputList, passwordMatchError, admin, signInError
 };
