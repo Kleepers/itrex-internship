@@ -1,0 +1,7 @@
+.input-invalid {
+    border: 1px solid #ff2567;
+}
+
+.input-invalid:active, .input-invalid:focus {
+    border: 1px solid #ff2567;
+}

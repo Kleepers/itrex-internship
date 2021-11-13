@@ -1,0 +1,12 @@
+.clinic__content {
+    background: #F9FAFF;
+    box-shadow: 0 4px 32px rgba(218, 228, 255, 0.32);
+    border-radius: 16px;
+    padding: 40px 16px 40px 48px;
+}
+
+@media screen and (max-width: 650px) {
+    .clinic__content {
+        padding: 40px 24px 95px 24px;
+    }
+}

@@ -1,0 +1,14 @@
+.authorization__title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: var(--title-margin-top);
+    margin-bottom: var(--auth-item-margin-bottom);
+    justify-items: center;
+}
+
+@media screen and (max-width: 559px) {
+    .authorization__title-wrapper {
+        margin-top: var(--title-margin-top);
+        margin-bottom: var(--auth-item-margin-bottom);
+    }
+}

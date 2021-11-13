@@ -1,0 +1,12 @@
+.clinic__user-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .clinic__user-info {
+        display: none;
+    }
+}
