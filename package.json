@@ -1,42 +1,40 @@
 {
   "name": "itrex-internship",
-  "version": "1.0.0",
-  "description": "Learning",
-  "main": "mvc.js",
-  "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve",
-    "lint": "npx eslint ./"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kleepers/itrex-internship.git"
-  },
-  "author": "Vladislav Khakimov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kleepers/itrex-internship/issues"
-  },
-  "homepage": "https://github.com/Kleepers/itrex-internship#readme",
-  "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/preset-env": "^7.13.15",
-    "autoprefixer": "^10.2.5",
-    "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^5.2.1",
-    "cssnano": "^5.0.1",
-    "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.4.1",
-    "postcss-loader": "^5.2.0",
-    "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "core-js": "^3.10.1",
-    "eslint": "^7.31.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
+    "@reduxjs/toolkit": "^1.6.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "formik": "^2.2.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

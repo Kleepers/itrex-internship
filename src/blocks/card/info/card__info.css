@@ -1,6 +1,0 @@
-.card__info {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-gap: 24px 16px;
-    padding: 24px 32px 40px 32px;
-}
