@@ -1,14 +1,31 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import { userNavButtons } from "../constants/navButtons";
 import { appointments } from "../constants/appointments";
 import Main from "../components/Main/Main";
 
 const User = () => {
+  const userDataPages = [
+    {
+      page: 'Profile',
+      title: 'My Profile',
+      data: {}
+    },
+    {
+      page: 'Appointments',
+      title: 'My Appointments',
+      data: appointments
+    },
+    {
+      page: 'Resolutions',
+      title: 'Resolutions',
+      data: {}
+    }
+
+  ]
   return (
     <>
       <Header name='Larry Prinston' type='Patient'/>
-      <Main buttons={userNavButtons} configTitle='My Appointments' isUser={false} cards={appointments}/>
+      <Main configTitle='My Appointments' pages={userDataPages} startingPage='Appointments'/>
     </>
   );
 };

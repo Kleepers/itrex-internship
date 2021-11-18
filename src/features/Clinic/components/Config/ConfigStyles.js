@@ -99,7 +99,35 @@ const StyledConfigSortSelect = styled.select`
   }
 `
 
+const StyledConfigButton = styled.button`
+  display: none;
+  
+  @media screen and (min-width: 779px) {
+    padding: 14px 16px 14px 20px;
+    background: #7297ff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    min-width: 160px;
+    color: white;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+  }
+
+`
+
+const StyledConfigButtonIcon = styled.span`
+  background-image: url(${plus});
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+`
+
 
 export {StyledConfig,StyledConfigSortSelect,StyledConfigSortMobile,StyledConfigSortWrapper,
   StyledConfigTitle,StyledConfigSortText,StyledConfigInputSearch,
-  StyledConfigSearchMobile}
+  StyledConfigSearchMobile,StyledConfigButton,StyledConfigButtonIcon}

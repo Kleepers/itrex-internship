@@ -1,13 +1,13 @@
 import React from "react";
 import background from './images/bg.jpg'
-import SignUpForm from "./components/SignUp/SignUpForm";
+import SignUpForm from "./pages/SignUp/SignUpForm";
 import styled from "styled-components";
 import {Route, Routes} from "react-router-dom";
-import SignInForm from "./components/SignIn/SignInForm";
-import RestorePass from "./components/RestorePass/RestorePass";
+import SignInForm from "./pages/SignIn/SignInForm";
+import RestorePass from "./pages/RestorePass/RestorePass";
 
 const StyledAuth = styled.div`
-  font-family: Poppins, sans-serif, Arial;
+  font-family: 'Poppins','sans-serif';
   font-style: normal;
   font-weight: 400;
   display: flex;

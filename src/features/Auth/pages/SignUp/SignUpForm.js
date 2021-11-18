@@ -1,10 +1,10 @@
 import React from "react";
 import { useFormik } from "formik";
 import validationSchema from "./validationSchema";
-import Input from "../Input/Input";
-import Header  from "../Header/Header";
-import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
-import Link from '../Link/Link'
+import Input from "../../components/Input/Input";
+import Header  from "../../components/Header/Header";
+import ButtonSubmit from "../../components/ButtonSubmit/ButtonSubmit";
+import Link from '../../components/Link/Link'
 import { StyledForm } from "../../modules/StyledForm";
 import { useNavigate } from "react-router-dom";
 

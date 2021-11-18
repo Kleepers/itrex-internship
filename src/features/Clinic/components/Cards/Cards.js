@@ -43,10 +43,11 @@ const Cards = ({cards}) => {
   return (
     <StyledCardsWrapper>
       {
-        cards.map((card, index) => (
-          <Card key={index} name={card.name} status={card.status} time={card.time}
-                message={card.message} avatar={card.avatar} type={card.type}/>
+        cards.length ? cards.map((card, index) => (
+        <Card key={index} name={card.name} status={card.status} time={card.time}
+        message={card.message} avatar={card.avatar} type={card.type}/>
         ))
+          : ''
       }
     </StyledCardsWrapper>
   );

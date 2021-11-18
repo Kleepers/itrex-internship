@@ -1,5 +1,11 @@
-import React from "react";
-import { StyledInput, StyledInputError, StyledInputWrapper, StyledIcon } from "./InputStyles";
+import React, { useState } from "react";
+import {
+  StyledInput,
+  StyledInputError,
+  StyledInputWrapper,
+  StyledIcon,
+  StyledPasswordButton
+} from "./InputStyles";
 import inputList from "../../services/inputList";
 
 
@@ -8,6 +14,16 @@ const Input = ({ name, handleChange, handleBlur, value, error, touched }) => {
   const icon = inputList[name].img
 
   const { placeholder } = inputList[name]
+
+  const [isVisible, setIsVisible] = useState(false)
+
+  const isPasswordField = name === 'password' || name === 'confirmPassword'
+
+  const handlePasswordButton = () => {
+    setIsVisible(!isVisible)
+  }
+
+  const passwordType = isVisible ? 'text' : 'password'
 
   let type = '';
 
@@ -29,11 +45,15 @@ const Input = ({ name, handleChange, handleBlur, value, error, touched }) => {
         onChange={handleChange}
         onBlur={handleBlur}
         value={value}
-        type={type}
+        type={type === 'password' ? passwordType : type}
         name={name}
         placeholder={placeholder}
         error={error}
         touched={touched}/>
+      {isPasswordField
+        ? <StyledPasswordButton onClick={handlePasswordButton}/>
+      : ''
+      }
       <StyledInputError>{error}</StyledInputError>
     </StyledInputWrapper>
   );

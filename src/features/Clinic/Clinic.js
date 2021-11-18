@@ -7,6 +7,7 @@ import User from "./routes/User";
 
 
 const StyledClinic = styled.div`
+  font-family: 'Poppins','sans-serif';
   background: #E4EBFF;
   display: flex;
   flex-direction: column;

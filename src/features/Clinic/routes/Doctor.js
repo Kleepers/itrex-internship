@@ -1,14 +1,28 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
-import { doctorNavButtons } from "../constants/navButtons";
 import { patients } from "../constants/patients";
 
+
 const Doctor = () => {
+
+  const doctorDataPages = [
+    {
+      page: 'Patients',
+      title: 'My Patients',
+      data: patients
+    },
+    {
+      page: 'Resolutions',
+      title: 'My Resolutions',
+      data: {}
+    },
+  ]
+
   return (
     <>
       <Header name='Miranda Nelson' type='Doctor' />
-      <Main buttons={doctorNavButtons} configTitle='My Patients' cards={patients}/>
+      <Main configTitle='My Patients' pages={doctorDataPages} startingPage='Patients'/>
     </>
   );
 };

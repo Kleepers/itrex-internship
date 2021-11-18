@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import Nav from "../Nav/Nav";
+import {StyledNavButton,StyledNav} from "../Nav/Nav";
 import Config from "../Config/Config";
 import Cards from "../Cards/Cards";
 
@@ -15,12 +15,28 @@ export const StyledMain = styled.main`
   }
 `
 
-const Main = ({buttons, configTitle, cards, isUser}) => {
+const Main = ({pages, startingPage}) => {
+
+  const [activePage,setActivePage] = useState(startingPage)
+
+  const handleActivePage = (page) => {
+    setActivePage(page)
+  }
+
+  const activePageElement = pages.find((element) => element.page === activePage)
+
+
   return (
     <StyledMain>
-      <Nav buttons={buttons}/>
-      <Config title={configTitle} isUser={isUser}/>
-      <Cards cards={cards}/>
+      <StyledNav >
+        {pages.map((element) => (
+          <StyledNavButton onClick={() => handleActivePage(element.page)} isActive={activePageElement.page === element.page}>
+            {element.page}
+          </StyledNavButton>
+        ))}
+      </StyledNav>
+      <Config title={activePageElement.title}/>
+      <Cards cards={activePageElement.data}/>
     </StyledMain>
   );
 };

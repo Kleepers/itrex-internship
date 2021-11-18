@@ -1,6 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-import NavButton from "./NavButton/NavButton";
 
 const StyledNav = styled.nav`
   
@@ -11,17 +9,28 @@ const StyledNav = styled.nav`
       margin-bottom: 40px;
   }
 `
+const StyledNavButton = styled.button`
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: ${props => props.isActive ? '#7297ff' : 'white'};
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-right: 12px;
+  min-width: 160px;
+  color: ${ props => props.isActive ? 'white' : '#7297ff'};
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
 
-const Nav = ({buttons}) => {
-  return (
-    <StyledNav>
-      {
-        buttons.map((button, index) => (
-          <NavButton key={index} isActive={button.isActive} text={button.name} />
-        ))
-      }
-    </StyledNav>
-  );
-};
+  @media screen and (max-width: 650px) {  
+    min-width: 120px;
+    margin-right: 24px;
+  }
 
-export default Nav;
+  &:last-of-type {
+    margin-right: 0;
+  }
+`
+
+export {StyledNav,StyledNavButton}

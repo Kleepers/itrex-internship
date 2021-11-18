@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import eye from './images/eye.svg'
 
 const StyledInputWrapper = styled.div`
   margin-bottom: 40px;
@@ -70,4 +71,18 @@ const StyledIcon = styled.span`
   }
 `
 
-export {StyledInputWrapper,StyledInputError,StyledInput, StyledIcon}
+const StyledPasswordButton = styled.span`
+  cursor: pointer;
+  position: absolute;
+  right: 26px;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+  background: url(${eye});
+  @media screen and (max-width: 559px) {
+    right: 18px;
+    top: 10px;
+  }
+`
+
+export {StyledInputWrapper,StyledInputError,StyledInput, StyledIcon,StyledPasswordButton}

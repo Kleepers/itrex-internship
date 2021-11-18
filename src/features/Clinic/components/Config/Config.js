@@ -1,31 +1,50 @@
 import React from "react";
-import styled from "styled-components";
 import {
-  StyledConfig,
+  StyledConfig, StyledConfigButton, StyledConfigButtonIcon,
   StyledConfigInputSearch,
   StyledConfigSearchMobile,
   StyledConfigSortMobile,
   StyledConfigSortSelect,
   StyledConfigSortText,
   StyledConfigSortWrapper,
-  StyledConfigTitle,
+  StyledConfigTitle
 } from "./ConfigStyles";
 
 
-const Config = ({title, isUser}) => {
+const Config = ({title}) => {
   return (
     <StyledConfig>
       <StyledConfigTitle>{title}</StyledConfigTitle>
-        <StyledConfigInputSearch placeholder='Search' />
-        <StyledConfigSearchMobile />
-        <StyledConfigSortMobile />
-        <StyledConfigSortWrapper>
-        <StyledConfigSortText>Sort by:</StyledConfigSortText>
-        <StyledConfigSortSelect>
-        <option>Date</option>
-        <option>Name</option>
-        </StyledConfigSortSelect>
-        </StyledConfigSortWrapper>
+      {title === 'My Appointments'
+        ?
+        <>
+          <StyledConfigSortMobile />
+          <StyledConfigSortWrapper>
+            <StyledConfigSortText>Show:</StyledConfigSortText>
+            <StyledConfigSortSelect>
+              <option>Upcoming</option>
+              <option>Name</option>
+            </StyledConfigSortSelect>
+          </StyledConfigSortWrapper>
+          <StyledConfigButton>
+            <StyledConfigButtonIcon />
+            Create an appointment
+          </StyledConfigButton>
+        </>
+        :
+        <>
+          <StyledConfigInputSearch placeholder='Search' />
+          <StyledConfigSearchMobile />
+          <StyledConfigSortMobile />
+          <StyledConfigSortWrapper>
+            <StyledConfigSortText>Sort by:</StyledConfigSortText>
+            <StyledConfigSortSelect>
+              <option>Date</option>
+              <option>Name</option>
+            </StyledConfigSortSelect>
+          </StyledConfigSortWrapper>
+        </>
+      }
     </StyledConfig>
   );
 };
