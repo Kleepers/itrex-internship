@@ -12,14 +12,14 @@ const StyledCard = styled.article`
   `
 
 const StyledCardClient = styled.div`
-  
+
     display: grid;
     grid-template-rows: 32px 16px;
     grid-template-columns: 64px 16px auto 40px;
     padding: 24px 32px;
     grid-template-areas:
-        "avatar name name button"
-        "avatar indicator status button";
+            "avatar name name button"
+            "avatar ${props => props.type === 'appointment' ? 'status' : 'indicator'} status button";
     border-bottom: 1px solid #dce0ec;
 
   @media screen and (max-width: 650px) {

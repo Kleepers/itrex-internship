@@ -4,7 +4,7 @@ import Nav from "../Nav/Nav";
 import Config from "../Config/Config";
 import Cards from "../Cards/Cards";
 
-const StyledMain = styled.main`
+export const StyledMain = styled.main`
   background: #F9FAFF;
   box-shadow: 0 4px 32px rgba(218, 228, 255, 0.32);
   border-radius: 16px;
@@ -15,11 +15,11 @@ const StyledMain = styled.main`
   }
 `
 
-const Main = ({buttons, configTitle, cards}) => {
+const Main = ({buttons, configTitle, cards, isUser}) => {
   return (
     <StyledMain>
       <Nav buttons={buttons}/>
-      <Config title={configTitle}/>
+      <Config title={configTitle} isUser={isUser}/>
       <Cards cards={cards}/>
     </StyledMain>
   );

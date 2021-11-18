@@ -12,7 +12,7 @@ import {
 } from "./ConfigStyles";
 
 
-const Config = ({title, isDoctor}) => {
+const Config = ({title, isUser}) => {
   return (
     <StyledConfig>
       <StyledConfigTitle>{title}</StyledConfigTitle>

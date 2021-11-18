@@ -14,14 +14,14 @@ import {
 } from "./CardStyles";
 
 
-const Card = ({name, status, time, message, avatar}) => {
+const Card = ({name, status, time, message, avatar, type}) => {
   return (
     <StyledCard>
-      <StyledCardClient>
+      <StyledCardClient type={type}>
         <StyledCardClientAvatar src={avatar} alt='avatar'/>
         <StyledCardClientName>{name}</StyledCardClientName>
         <StyledCardClientStatus>{status}</StyledCardClientStatus>
-        <StyledCardClientIndicator />
+        {type === 'appointment' ? '' : <StyledCardClientIndicator />}
         <StyledCardClientButton />
       </StyledCardClient>
       <StyledCardInfo>
