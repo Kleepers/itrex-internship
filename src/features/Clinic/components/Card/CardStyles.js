@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import button from './images/card-btn.svg'
-import clock from './images/clock.svg'
-import clipboard from './images/clipboard.svg'
+import styled from 'styled-components';
+import button from './images/card-btn.svg';
+import clock from './images/clock.svg';
+import clipboard from './images/clipboard.svg';
 
 const StyledCard = styled.article`
   
@@ -9,7 +9,7 @@ const StyledCard = styled.article`
   box-shadow: 0 4px 32px rgba(218, 228, 255, 0.24);
   border-radius: 12px;
   
-  `
+  `;
 
 const StyledCardClient = styled.div`
 
@@ -19,21 +19,21 @@ const StyledCardClient = styled.div`
     padding: 24px 32px;
     grid-template-areas:
             "avatar name name button"
-            "avatar ${props => props.type === 'appointment' ? 'status' : 'indicator'} status button";
+            "avatar ${(props) => (props.type === 'appointment' ? 'status' : 'indicator')} status button";
     border-bottom: 1px solid #dce0ec;
 
   @media screen and (max-width: 650px) {
       padding: 16px 24px;
       grid-template-rows: 32px 32px;
   }
-`
+`;
 
 const StyledCardClientAvatar = styled.img`
   grid-area: avatar;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-`
+`;
 
 const StyledCardClientName = styled.h3`
   grid-area: name;
@@ -41,7 +41,7 @@ const StyledCardClientName = styled.h3`
   font-weight: 600;
   font-size: 17px;
   line-height: 130%;
-`
+`;
 
 const StyledCardClientStatus = styled.p`
   grid-area: status;
@@ -50,7 +50,7 @@ const StyledCardClientStatus = styled.p`
   font-size: 13px;
   line-height: 130%;
   color: #a1abc9;
-`
+`;
 
 const StyledCardClientIndicator = styled.span`
   grid-area: indicator;
@@ -59,7 +59,7 @@ const StyledCardClientIndicator = styled.span`
   width: 8px;
   height: 8px;
   margin-top: 4px;
-`
+`;
 
 const StyledCardClientButton = styled.button`
   grid-area: button;
@@ -69,14 +69,14 @@ const StyledCardClientButton = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
-`
+`;
 
 const StyledCardInfo = styled.div`
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-gap: 24px 16px;
   padding: 24px 32px 40px 32px;
-`
+`;
 
 const StyledCardInfoClock = styled.span`
   background-image: url(${clock});
@@ -84,14 +84,14 @@ const StyledCardInfoClock = styled.span`
   background-repeat: no-repeat;
   height: 20px;
   width: 20px;
-`
+`;
 
 const StyledCardInfoTime = styled.p`
   margin: 0;
   font-weight: 600;
   font-size: 15px;
   line-height: 130%;
-`
+`;
 
 const StyledCardInfoClipboard = styled.span`
   background-image: url(${clipboard});
@@ -99,18 +99,16 @@ const StyledCardInfoClipboard = styled.span`
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-`
+`;
 
 const StyledCardInfoMessage = styled.p`
   margin: 0;
   font-size: 15px;
   line-height: 140%;
-`
+`;
 
-export {StyledCardClientButton,StyledCardClientAvatar,StyledCardClientIndicator,
-  StyledCardClientStatus,StyledCardClientName,StyledCardClient,StyledCard,
-  StyledCardInfoMessage,StyledCardInfoTime,StyledCardInfoClock,StyledCardInfoClipboard,StyledCardInfo}
-
-
-
-
+export {
+  StyledCardClientButton, StyledCardClientAvatar, StyledCardClientIndicator,
+  StyledCardClientStatus, StyledCardClientName, StyledCardClient, StyledCard,
+  StyledCardInfoMessage, StyledCardInfoTime, StyledCardInfoClock, StyledCardInfoClipboard, StyledCardInfo,
+};

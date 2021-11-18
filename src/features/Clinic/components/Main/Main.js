@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import {StyledNavButton,StyledNav} from "../Nav/Nav";
-import Config from "../Config/Config";
-import Cards from "../Cards/Cards";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { StyledNavButton, StyledNav } from '../Nav/Nav';
+import Config from '../Config/Config';
+import Cards from '../Cards/Cards';
 
 export const StyledMain = styled.main`
   background: #F9FAFF;
@@ -13,30 +13,31 @@ export const StyledMain = styled.main`
   @media screen and (max-width: 650px) {
     padding: 40px 24px 95px 24px;
   }
-`
+`;
 
-const Main = ({pages, startingPage}) => {
-
-  const [activePage,setActivePage] = useState(startingPage)
+const Main = function ({ pages, startingPage }) {
+  const [activePage, setActivePage] = useState(startingPage);
 
   const handleActivePage = (page) => {
-    setActivePage(page)
-  }
+    setActivePage(page);
+  };
 
-  const activePageElement = pages.find((element) => element.page === activePage)
-
+  const activePageElement = pages.find((element) => element.page === activePage);
 
   return (
     <StyledMain>
-      <StyledNav >
+      <StyledNav>
         {pages.map((element) => (
-          <StyledNavButton onClick={() => handleActivePage(element.page)} isActive={activePageElement.page === element.page}>
+          <StyledNavButton
+            onClick={() => handleActivePage(element.page)}
+            isActive={activePageElement.page === element.page}
+          >
             {element.page}
           </StyledNavButton>
         ))}
       </StyledNav>
-      <Config title={activePageElement.title}/>
-      <Cards cards={activePageElement.data}/>
+      <Config title={activePageElement.title} />
+      <Cards cards={activePageElement.data} />
     </StyledMain>
   );
 };

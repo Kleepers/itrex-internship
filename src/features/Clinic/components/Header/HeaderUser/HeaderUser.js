@@ -1,8 +1,10 @@
-import React from "react";
-import { StyledUserAvatar,StyledUserInfo,StyledUsername,StyledUser,StyledUserType,StyledUserIndicator } from "./HeaderUserStyles";
-import avatar from './images/avatar.png'
+import React from 'react';
+import {
+  StyledUserAvatar, StyledUserInfo, StyledUsername, StyledUser, StyledUserType, StyledUserIndicator,
+} from './HeaderUserStyles';
+import avatar from './images/avatar.png';
 
-const HeaderUser = ({name,type}) => {
+const HeaderUser = function ({ name, type }) {
   return (
     <StyledUser>
       <StyledUserInfo>
@@ -14,7 +16,7 @@ const HeaderUser = ({name,type}) => {
         </StyledUserType>
       </StyledUserInfo>
       <StyledUserIndicator />
-      <StyledUserAvatar src={avatar}/>
+      <StyledUserAvatar src={avatar} />
     </StyledUser>
   );
 };

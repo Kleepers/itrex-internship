@@ -1,17 +1,17 @@
-import styled from "styled-components";
-import search from './images/search.svg'
-import sort from './images/sort.svg'
-import plus from './images/plus-icon.svg'
+import styled from 'styled-components';
+import search from './images/search.svg';
+import sort from './images/sort.svg';
+import plus from './images/plus-icon.svg';
 
 const StyledConfig = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 32px;
-`
+`;
 
 const StyledConfigTitle = styled.h2`
   margin: 0 auto 0 0;
-`
+`;
 
 const StyledConfigInputSearch = styled.input`
     display: none;
@@ -42,7 +42,7 @@ const StyledConfigInputSearch = styled.input`
     }
   }
 
-`
+`;
 
 const StyledConfigSearchMobile = styled.span`
   @media screen and (max-width: 769px) {
@@ -54,7 +54,7 @@ const StyledConfigSearchMobile = styled.span`
   @media screen and (max-width: 650px) {
       margin-right: 28px;
   }
-`
+`;
 
 const StyledConfigSortMobile = styled.span`
   @media screen and (max-width: 769px) {
@@ -67,7 +67,7 @@ const StyledConfigSortMobile = styled.span`
   @media screen and (max-width: 650px) {
       margin-right: 2px;
   }
-`
+`;
 
 const StyledConfigSortWrapper = styled.div`
   display: none;
@@ -76,7 +76,7 @@ const StyledConfigSortWrapper = styled.div`
       display: flex;
       margin-right: 60px;
   }
-`
+`;
 
 const StyledConfigSortText = styled.p`
   margin: 0 16px 0 0;
@@ -84,7 +84,7 @@ const StyledConfigSortText = styled.p`
   line-height: 140%;
   color: #a1abc9;
   align-self: center;
-`
+`;
 
 const StyledConfigSortSelect = styled.select`
   border: none;
@@ -97,7 +97,7 @@ const StyledConfigSortSelect = styled.select`
     border: none;
     outline: none;
   }
-`
+`;
 
 const StyledConfigButton = styled.button`
   display: none;
@@ -118,16 +118,17 @@ const StyledConfigButton = styled.button`
     margin-right: 60px;
   }
 
-`
+`;
 
 const StyledConfigButtonIcon = styled.span`
   background-image: url(${plus});
   width: 16px;
   height: 16px;
   margin-right: 12px;
-`
+`;
 
-
-export {StyledConfig,StyledConfigSortSelect,StyledConfigSortMobile,StyledConfigSortWrapper,
-  StyledConfigTitle,StyledConfigSortText,StyledConfigInputSearch,
-  StyledConfigSearchMobile,StyledConfigButton,StyledConfigButtonIcon}
+export {
+  StyledConfig, StyledConfigSortSelect, StyledConfigSortMobile, StyledConfigSortWrapper,
+  StyledConfigTitle, StyledConfigSortText, StyledConfigInputSearch,
+  StyledConfigSearchMobile, StyledConfigButton, StyledConfigButtonIcon,
+};

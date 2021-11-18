@@ -1,39 +1,38 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   StyledInput,
   StyledInputError,
   StyledInputWrapper,
   StyledIcon,
-  StyledPasswordButton
-} from "./InputStyles";
-import inputList from "../../services/inputList";
+  StyledPasswordButton,
+} from './InputStyles';
+import inputList from '../../services/inputList';
 
+const Input = function ({
+  name, handleChange, handleBlur, value, error, touched,
+}) {
+  const icon = inputList[name].img;
 
-const Input = ({ name, handleChange, handleBlur, value, error, touched }) => {
+  const { placeholder } = inputList[name];
 
-  const icon = inputList[name].img
+  const [isVisible, setIsVisible] = useState(false);
 
-  const { placeholder } = inputList[name]
-
-  const [isVisible, setIsVisible] = useState(false)
-
-  const isPasswordField = name === 'password' || name === 'confirmPassword'
+  const isPasswordField = name === 'password' || name === 'confirmPassword';
 
   const handlePasswordButton = () => {
-    setIsVisible(!isVisible)
-  }
+    setIsVisible(!isVisible);
+  };
 
-  const passwordType = isVisible ? 'text' : 'password'
+  const passwordType = isVisible ? 'text' : 'password';
 
   let type = '';
 
   if (name === 'password' || name === 'confirmPassword') {
-    type = 'password'
+    type = 'password';
   } else if (name === 'email') {
     type = 'email';
-  }
-  else {
-    type = 'text'
+  } else {
+    type = 'text';
   }
 
   return (
@@ -49,11 +48,11 @@ const Input = ({ name, handleChange, handleBlur, value, error, touched }) => {
         name={name}
         placeholder={placeholder}
         error={error}
-        touched={touched}/>
+        touched={touched}
+      />
       {isPasswordField
-        ? <StyledPasswordButton onClick={handlePasswordButton}/>
-      : ''
-      }
+        ? <StyledPasswordButton onClick={handlePasswordButton} />
+        : ''}
       <StyledInputError>{error}</StyledInputError>
     </StyledInputWrapper>
   );

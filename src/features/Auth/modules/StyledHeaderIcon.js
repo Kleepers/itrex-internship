@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import icon from "../images/header-icon.svg";
+import styled from 'styled-components';
+import icon from '../images/header-icon.svg';
 
 export const StyledHeaderIcon = styled.span`
   margin-right: 24px;
@@ -9,4 +9,4 @@ export const StyledHeaderIcon = styled.span`
   width: 8px;
   height: 13px;
   cursor: pointer;
-`
+`;

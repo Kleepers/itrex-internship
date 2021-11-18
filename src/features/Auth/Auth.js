@@ -1,10 +1,10 @@
-import React from "react";
-import background from './images/bg.jpg'
-import SignUpForm from "./pages/SignUp/SignUpForm";
-import styled from "styled-components";
-import {Route, Routes} from "react-router-dom";
-import SignInForm from "./pages/SignIn/SignInForm";
-import RestorePass from "./pages/RestorePass/RestorePass";
+import React from 'react';
+import styled from 'styled-components';
+import { Route, Routes } from 'react-router-dom';
+import background from './images/bg.jpg';
+import SignUpForm from './pages/SignUp/SignUpForm';
+import SignInForm from './pages/SignIn/SignInForm';
+import RestorePass from './pages/RestorePass/RestorePass';
 
 const StyledAuth = styled.div`
   font-family: 'Poppins','sans-serif';
@@ -20,15 +20,15 @@ const StyledAuth = styled.div`
       flex-direction: column;
       background-size: auto 242px;
   }
-`
+`;
 
-const Auth = () => {
+const Auth = function () {
   return (
     <StyledAuth>
       <Routes>
-        <Route path='/signup' element={<SignUpForm />} />
-        <Route path='/signin' element={<SignInForm />} />
-        <Route path='/restore-pass' element={<RestorePass />} />
+        <Route path="/signup" element={<SignUpForm />} />
+        <Route path="/signin" element={<SignInForm />} />
+        <Route path="/restore-pass" element={<RestorePass />} />
       </Routes>
     </StyledAuth>
   );

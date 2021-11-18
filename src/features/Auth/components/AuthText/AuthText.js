@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledAuthText = styled.p`
   font-size: 15px;
@@ -12,9 +12,9 @@ const StyledAuthText = styled.p`
       margin-top: 0;
       margin-bottom: 24px;
   }
-`
+`;
 
-const AuthText = ({children}) => {
+const AuthText = function ({ children }) {
   return (
     <StyledAuthText>
       {children}

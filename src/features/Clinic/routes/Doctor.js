@@ -1,28 +1,26 @@
-import React from "react";
-import Header from "../components/Header/Header";
-import Main from "../components/Main/Main";
-import { patients } from "../constants/patients";
+import React from 'react';
+import Header from '../components/Header/Header';
+import Main from '../components/Main/Main';
+import { patients } from '../constants/patients';
 
-
-const Doctor = () => {
-
+const Doctor = function () {
   const doctorDataPages = [
     {
       page: 'Patients',
       title: 'My Patients',
-      data: patients
+      data: patients,
     },
     {
       page: 'Resolutions',
       title: 'My Resolutions',
-      data: {}
+      data: {},
     },
-  ]
+  ];
 
   return (
     <>
-      <Header name='Miranda Nelson' type='Doctor' />
-      <Main configTitle='My Patients' pages={doctorDataPages} startingPage='Patients'/>
+      <Header name="Miranda Nelson" type="Doctor" />
+      <Main configTitle="My Patients" pages={doctorDataPages} startingPage="Patients" />
     </>
   );
 };

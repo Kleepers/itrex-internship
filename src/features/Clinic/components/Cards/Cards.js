@@ -1,6 +1,6 @@
-import React from "react";
-import styled from 'styled-components'
-import Card from "../Card/Card";
+import React from 'react';
+import styled from 'styled-components';
+import Card from '../Card/Card';
 
 export const StyledCardsWrapper = styled.div`
   display: grid;
@@ -37,15 +37,22 @@ export const StyledCardsWrapper = styled.div`
       width: 0;
     }
   }
-`
+`;
 
-const Cards = ({cards}) => {
+const Cards = function ({ cards }) {
   return (
     <StyledCardsWrapper>
       {
         cards.length ? cards.map((card, index) => (
-        <Card key={index} name={card.name} status={card.status} time={card.time}
-        message={card.message} avatar={card.avatar} type={card.type}/>
+          <Card
+            key={index}
+            name={card.name}
+            status={card.status}
+            time={card.time}
+            message={card.message}
+            avatar={card.avatar}
+            type={card.type}
+          />
         ))
           : ''
       }

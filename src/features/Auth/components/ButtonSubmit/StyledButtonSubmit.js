@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import arrow from './images/arrow.svg'
+import styled from 'styled-components';
+import arrow from './images/arrow.svg';
 
 const StyledButtonSubmit = styled.button`
   height: 56px;
@@ -35,13 +35,13 @@ const StyledButtonSubmit = styled.button`
         height: 48px;
         min-height: 48px;
       }
-  `
+  `;
 
 const StyledButtonIcon = styled.span`
   margin-left: 16px;
   background: url(${arrow});
   width: 8px;
   height: 13px;
-`
+`;
 
-export {StyledButtonIcon, StyledButtonSubmit}
+export { StyledButtonIcon, StyledButtonSubmit };

@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledUser = styled.div`
     display: flex;
     align-items: center;
-`
+`;
 
 const StyledUserType = styled.p`
   font-style: normal;
@@ -13,7 +13,7 @@ const StyledUserType = styled.p`
   color: #a1abc9;
   margin: 0;
   text-align: right;
-`
+`;
 
 const StyledUsername = styled.h1`
   font-style: normal;
@@ -22,7 +22,7 @@ const StyledUsername = styled.h1`
   line-height: 130%;
   margin-bottom: 4px;
   margin-top: 0;
-`
+`;
 
 const StyledUserInfo = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const StyledUserInfo = styled.div`
   margin-right: 16px;
   @media screen and (max-width: 650px) {
       display: none;
-`
+`;
 
 const StyledUserIndicator = styled.span`
   background: #34C197;
@@ -43,11 +43,13 @@ const StyledUserIndicator = styled.span`
   z-index: 1;
   border: 3px solid #E3EBFF;
   box-sizing: content-box;
-`
+`;
 
 const StyledUserAvatar = styled.img`
   width: 40px;
   height: 40px;
-`
+`;
 
-export {StyledUser, StyledUsername,StyledUserInfo,StyledUserType,StyledUserAvatar,StyledUserIndicator}
+export {
+  StyledUser, StyledUsername, StyledUserInfo, StyledUserType, StyledUserAvatar, StyledUserIndicator,
+};

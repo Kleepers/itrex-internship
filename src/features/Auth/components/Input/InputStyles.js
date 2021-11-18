@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import eye from './images/eye.svg'
+import styled from 'styled-components';
+import eye from './images/eye.svg';
 
 const StyledInputWrapper = styled.div`
   margin-bottom: 40px;
@@ -16,7 +16,7 @@ const StyledInputWrapper = styled.div`
       margin-bottom: 32px;
     }
   }
-`
+`;
 
 const StyledInput = styled.input`
   width: 100%;
@@ -44,7 +44,7 @@ const StyledInput = styled.input`
       line-height: 21px;
     }
   }
-`
+`;
 
 const StyledInputError = styled.span`
   color: #F6657F;
@@ -55,7 +55,7 @@ const StyledInputError = styled.span`
   @media screen and (max-width: 559px) {
       margin-top: 15px;
   }
-`
+`;
 
 const StyledIcon = styled.span`
   position: absolute;
@@ -69,7 +69,7 @@ const StyledIcon = styled.span`
   @media screen and (min-width: 560px) {
     top: 16px;
   }
-`
+`;
 
 const StyledPasswordButton = styled.span`
   cursor: pointer;
@@ -83,6 +83,8 @@ const StyledPasswordButton = styled.span`
     right: 18px;
     top: 10px;
   }
-`
+`;
 
-export {StyledInputWrapper,StyledInputError,StyledInput, StyledIcon,StyledPasswordButton}
+export {
+  StyledInputWrapper, StyledInputError, StyledInput, StyledIcon, StyledPasswordButton,
+};

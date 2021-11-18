@@ -1,19 +1,17 @@
 import React from 'react';
-import { Routes, Route} from "react-router-dom";
-import Auth from "./features/Auth/Auth";
-import Clinic from "./features/Clinic/Clinic";
+import { Routes, Route } from 'react-router-dom';
+import Auth from './features/Auth/Auth';
+import Clinic from './features/Clinic/Clinic';
 
-
-
-function App() {
+const App = function () {
   return (
-    <div className='App'>
+    <div className="App">
       <Routes>
-        <Route path='/*' element={<Auth />} />
-        <Route path='/clinic/*' element={<Clinic />} />
+        <Route path="/*" element={<Auth />} />
+        <Route path="/clinic/*" element={<Clinic />} />
       </Routes>
     </div>
   );
-}
+};
 
 export default App;

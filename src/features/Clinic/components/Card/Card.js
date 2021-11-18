@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   StyledCard,
   StyledCardClient,
@@ -10,15 +10,16 @@ import {
   StyledCardInfo,
   StyledCardInfoClipboard,
   StyledCardInfoClock, StyledCardInfoMessage,
-  StyledCardInfoTime
-} from "./CardStyles";
+  StyledCardInfoTime,
+} from './CardStyles';
 
-
-const Card = ({name, status, time, message, avatar, type}) => {
+const Card = function ({
+  name, status, time, message, avatar, type,
+}) {
   return (
     <StyledCard>
       <StyledCardClient type={type}>
-        <StyledCardClientAvatar src={avatar} alt='avatar'/>
+        <StyledCardClientAvatar src={avatar} alt="avatar" />
         <StyledCardClientName>{name}</StyledCardClientName>
         <StyledCardClientStatus>{status}</StyledCardClientStatus>
         {type === 'appointment' ? '' : <StyledCardClientIndicator />}
@@ -27,7 +28,7 @@ const Card = ({name, status, time, message, avatar, type}) => {
       <StyledCardInfo>
         <StyledCardInfoClock />
         <StyledCardInfoTime>{time}</StyledCardInfoTime>
-        <StyledCardInfoClipboard/>
+        <StyledCardInfoClipboard />
         <StyledCardInfoMessage>{message}</StyledCardInfoMessage>
       </StyledCardInfo>
     </StyledCard>

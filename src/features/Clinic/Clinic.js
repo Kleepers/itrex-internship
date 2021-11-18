@@ -1,10 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Route, Routes } from "react-router-dom";
-import Doctor from "./routes/Doctor";
-import User from "./routes/User";
-
+import { Route, Routes } from 'react-router-dom';
+import Doctor from './routes/Doctor';
+import User from './routes/User';
 
 const StyledClinic = styled.div`
   font-family: 'Poppins','sans-serif';
@@ -20,14 +19,14 @@ const StyledClinic = styled.div`
   @media screen and (max-width: 650px) {
       padding: 0;
   }
-`
+`;
 
-const Clinic = () => {
+const Clinic = function () {
   return (
     <StyledClinic>
       <Routes>
-        <Route path='/doctor' element={<Doctor />} />
-        <Route path='/user' element={<User />} />
+        <Route path="/doctor" element={<Doctor />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </StyledClinic>
   );

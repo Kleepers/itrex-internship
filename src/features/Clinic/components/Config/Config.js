@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   StyledConfig, StyledConfigButton, StyledConfigButtonIcon,
   StyledConfigInputSearch,
@@ -7,44 +7,44 @@ import {
   StyledConfigSortSelect,
   StyledConfigSortText,
   StyledConfigSortWrapper,
-  StyledConfigTitle
-} from "./ConfigStyles";
+  StyledConfigTitle,
+} from './ConfigStyles';
 
-
-const Config = ({title}) => {
+const Config = function ({ title }) {
   return (
     <StyledConfig>
       <StyledConfigTitle>{title}</StyledConfigTitle>
       {title === 'My Appointments'
-        ?
-        <>
-          <StyledConfigSortMobile />
-          <StyledConfigSortWrapper>
-            <StyledConfigSortText>Show:</StyledConfigSortText>
-            <StyledConfigSortSelect>
-              <option>Upcoming</option>
-              <option>Name</option>
-            </StyledConfigSortSelect>
-          </StyledConfigSortWrapper>
-          <StyledConfigButton>
-            <StyledConfigButtonIcon />
-            Create an appointment
-          </StyledConfigButton>
-        </>
-        :
-        <>
-          <StyledConfigInputSearch placeholder='Search' />
-          <StyledConfigSearchMobile />
-          <StyledConfigSortMobile />
-          <StyledConfigSortWrapper>
-            <StyledConfigSortText>Sort by:</StyledConfigSortText>
-            <StyledConfigSortSelect>
-              <option>Date</option>
-              <option>Name</option>
-            </StyledConfigSortSelect>
-          </StyledConfigSortWrapper>
-        </>
-      }
+        ? (
+          <>
+            <StyledConfigSortMobile />
+            <StyledConfigSortWrapper>
+              <StyledConfigSortText>Show:</StyledConfigSortText>
+              <StyledConfigSortSelect>
+                <option>Upcoming</option>
+                <option>Name</option>
+              </StyledConfigSortSelect>
+            </StyledConfigSortWrapper>
+            <StyledConfigButton>
+              <StyledConfigButtonIcon />
+              Create an appointment
+            </StyledConfigButton>
+          </>
+        )
+        : (
+          <>
+            <StyledConfigInputSearch placeholder="Search" />
+            <StyledConfigSearchMobile />
+            <StyledConfigSortMobile />
+            <StyledConfigSortWrapper>
+              <StyledConfigSortText>Sort by:</StyledConfigSortText>
+              <StyledConfigSortSelect>
+                <option>Date</option>
+                <option>Name</option>
+              </StyledConfigSortSelect>
+            </StyledConfigSortWrapper>
+          </>
+        )}
     </StyledConfig>
   );
 };

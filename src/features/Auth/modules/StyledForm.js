@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledForm = styled.form`
   box-sizing: border-box;
@@ -26,4 +26,4 @@ export const StyledForm = styled.form`
       border-radius: 24px 24px 0 0;
       min-height: calc(100vh - 72px);
   }
-`
+`;

@@ -1,31 +1,31 @@
-import React from "react";
-import Header from "../components/Header/Header";
-import { appointments } from "../constants/appointments";
-import Main from "../components/Main/Main";
+import React from 'react';
+import Header from '../components/Header/Header';
+import { appointments } from '../constants/appointments';
+import Main from '../components/Main/Main';
 
-const User = () => {
+const User = function () {
   const userDataPages = [
     {
       page: 'Profile',
       title: 'My Profile',
-      data: {}
+      data: {},
     },
     {
       page: 'Appointments',
       title: 'My Appointments',
-      data: appointments
+      data: appointments,
     },
     {
       page: 'Resolutions',
       title: 'Resolutions',
-      data: {}
-    }
+      data: {},
+    },
 
-  ]
+  ];
   return (
     <>
-      <Header name='Larry Prinston' type='Patient'/>
-      <Main configTitle='My Appointments' pages={userDataPages} startingPage='Appointments'/>
+      <Header name="Larry Prinston" type="Patient" />
+      <Main configTitle="My Appointments" pages={userDataPages} startingPage="Appointments" />
     </>
   );
 };
