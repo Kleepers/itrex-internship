@@ -26,6 +26,7 @@ const Auth = function () {
   return (
     <StyledAuth>
       <Routes>
+        <Route exact path="/" element={<SignUpForm />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
         <Route path="/restore-pass" element={<RestorePass />} />

@@ -25,6 +25,7 @@ const Clinic = function () {
   return (
     <StyledClinic>
       <Routes>
+        <Route exact path="/" element={<Doctor />} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/user" element={<User />} />
       </Routes>
