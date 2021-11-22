@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Doctor from './routes/Doctor';
 import User from './routes/User';
 
@@ -25,7 +25,7 @@ const Clinic = function () {
   return (
     <StyledClinic>
       <Routes>
-        <Route exact path="/" element={<Doctor />} />
+        <Route path="/" element={<Navigate to="/user" />} />
         <Route path="/doctor" element={<Doctor />} />
         <Route path="/user" element={<User />} />
       </Routes>

@@ -20,7 +20,6 @@ const User = function () {
       title: 'Resolutions',
       data: {},
     },
-
   ];
   return (
     <>

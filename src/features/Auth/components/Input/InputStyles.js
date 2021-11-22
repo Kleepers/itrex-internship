@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import eye from './images/eye.svg';
+import { blue } from '../../../constants/colors';
 
 const StyledInputWrapper = styled.div`
   margin-bottom: 40px;
@@ -26,7 +27,7 @@ const StyledInput = styled.input`
   padding: 15px 40px 15px 64px;
   border-radius: 8px;
   &:focus, &:active {
-    border: 1px solid #7297FF;
+    border: 1px solid ${blue};
     outline: none;
   }
   &::placeholder {
@@ -49,7 +50,7 @@ const StyledInput = styled.input`
 const StyledInputError = styled.span`
   color: #F6657F;
   font-size: 13px;
-  line-height: 120%;
+  line-height: 16px;
   margin-top: 8px;
   letter-spacing: -0.24px;
   @media screen and (max-width: 559px) {

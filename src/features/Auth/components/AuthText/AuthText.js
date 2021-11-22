@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledAuthText = styled.p`
   font-size: 15px;
-  line-height: 130%;
+  line-height: 19px;
   color: #A1ABC9;
   margin-bottom: 40px;
   max-width: 368px;

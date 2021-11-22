@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
   StyledInput,
   StyledInputError,
@@ -17,23 +17,18 @@ const Input = function ({
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const isPasswordField = name === 'password' || name === 'confirmPassword';
+  const isPasswordField = (name === 'password' || name === 'confirmPassword');
 
   const handlePasswordButton = () => {
     setIsVisible(!isVisible);
   };
-
-  const passwordType = isVisible ? 'text' : 'password';
-
-  let type = '';
-
-  if (name === 'password' || name === 'confirmPassword') {
-    type = 'password';
-  } else if (name === 'email') {
-    type = 'email';
-  } else {
-    type = 'text';
-  }
+  const type = useMemo(() => {
+    if (isPasswordField) {
+      return (isVisible ? 'text' : 'password');
+    }
+    if (name === 'email') return 'email';
+    return 'text';
+  }, [name, isVisible]);
 
   return (
     <StyledInputWrapper>
@@ -44,16 +39,18 @@ const Input = function ({
         onChange={handleChange}
         onBlur={handleBlur}
         value={value}
-        type={type === 'password' ? passwordType : type}
+        type={type}
         name={name}
         placeholder={placeholder}
         error={error}
         touched={touched}
       />
-      {isPasswordField
-        ? <StyledPasswordButton onClick={handlePasswordButton} />
-        : ''}
-      <StyledInputError>{error}</StyledInputError>
+      {isPasswordField && (
+        <StyledPasswordButton onClick={handlePasswordButton} />
+      )}
+      {(touched && error) && (
+        <StyledInputError>{error}</StyledInputError>
+      )}
     </StyledInputWrapper>
   );
 };

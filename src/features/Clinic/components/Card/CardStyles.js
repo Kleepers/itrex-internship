@@ -40,7 +40,7 @@ const StyledCardClientName = styled.h3`
   margin: 0;
   font-weight: 600;
   font-size: 17px;
-  line-height: 130%;
+  line-height: 22px;
 `;
 
 const StyledCardClientStatus = styled.p`
@@ -48,7 +48,7 @@ const StyledCardClientStatus = styled.p`
   margin: 0;
   font-weight: 500;
   font-size: 13px;
-  line-height: 130%;
+  line-height: 17px;
   color: #a1abc9;
 `;
 
@@ -104,7 +104,7 @@ const StyledCardInfoClipboard = styled.span`
 const StyledCardInfoMessage = styled.p`
   margin: 0;
   font-size: 15px;
-  line-height: 140%;
+  line-height: 21px;
 `;
 
 export {

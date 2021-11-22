@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import { blue } from '../../../constants/colors';
 
 const StyledLinkWrapper = styled.p`
   font-size: 15px;
@@ -15,7 +16,7 @@ const StyledLinkWrapper = styled.p`
 `;
 
 const StyledLink = styled.a`
-  color: #7297FF;
+  color: ${blue};
   text-decoration-line: underline;
   cursor: pointer;
   font-weight: ${(props) => (props.isFooter ? '600' : '500')};

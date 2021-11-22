@@ -4,15 +4,17 @@ import Card from '../Card/Card';
 
 export const StyledCardsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 24px 20px;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-gap: 20px 24px;
   overflow-y: scroll;
-  max-height: 65vh;
+  max-height: 80%;
   padding-right: 44px;
 
   @media screen and (max-width: 769px) {
     padding-right: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
   }
+  
 
   &::-webkit-scrollbar {
     width: 12px;

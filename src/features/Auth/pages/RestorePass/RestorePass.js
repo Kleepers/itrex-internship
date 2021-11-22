@@ -25,7 +25,7 @@ const RestorePass = function () {
 
   return (
     <StyledForm onSubmit={formik.handleSubmit}>
-      <Header text="Restore Password" isSignUp={false}>
+      <Header text="Restore Password">
         <StyledHeaderIcon />
       </Header>
 

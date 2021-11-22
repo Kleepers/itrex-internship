@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import background from './images/bg.jpg';
 import SignUpForm from './pages/SignUp/SignUpForm';
 import SignInForm from './pages/SignIn/SignInForm';
@@ -26,7 +26,7 @@ const Auth = function () {
   return (
     <StyledAuth>
       <Routes>
-        <Route exact path="/" element={<SignUpForm />} />
+        <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
         <Route path="/restore-pass" element={<RestorePass />} />

@@ -9,7 +9,7 @@ const StyledUserType = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 130%;
+  line-height: 17px;
   color: #a1abc9;
   margin: 0;
   text-align: right;
@@ -19,7 +19,7 @@ const StyledUsername = styled.h1`
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  line-height: 130%;
+  line-height: 19px;
   margin-bottom: 4px;
   margin-top: 0;
 `;

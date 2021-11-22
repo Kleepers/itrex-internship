@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import arrow from './images/arrow.svg';
+import { blue, darkBlue } from '../../../constants/colors';
 
 const StyledButtonSubmit = styled.button`
   height: 56px;
   min-height: 56px;
   margin-right: auto;
-  background-color: #7297FF;
+  background-color: ${blue};
   border-radius: 8px;
   font-weight: 600;
   font-size: 17px;
@@ -25,12 +26,12 @@ const StyledButtonSubmit = styled.button`
     outline:none;
   }
   &:hover {
-    background-color: #476cd3;
+    background-color: ${darkBlue};
   ;
     @media screen and (max-width: 559px) {
         background-position: right 24px top 17px;
         font-size: 15px;
-        line-height: 130%;
+        line-height: 19px;
         padding: 0 24px 0 16px;
         height: 48px;
         min-height: 48px;

@@ -33,7 +33,7 @@ const SignUpForm = function () {
 
   return (
     <StyledForm onSubmit={formik.handleSubmit}>
-      <Header text="Sign In" isSignUp={false} />
+      <Header text="Sign In" />
 
       <Input
         name="email"
