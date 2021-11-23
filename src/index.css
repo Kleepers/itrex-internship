@@ -1,71 +1,40 @@
-@import url('vendor/normalize.css');
-
-@import url('vendor/fonts/font.css');
-
-@import url('blocks/page/page.css');
-
-@import url('blocks/authorization/authorization.css');
-@import url('blocks/input/input.css');
-@import url('blocks/authorization/__link/authorization__link.css');
-@import url('blocks/authorization/__submit/authorization__submit.css');
-@import url('blocks/authorization/__link-wrapper/authorization__link-wrapper.css');
-@import url('blocks/authorization/__title/authorization__title.css');
-@import url('blocks/input/input-wrapper/input-wrapper.css');
-@import url('blocks/input/input-img/input-img.css');
-@import url('blocks/icon/icon-eye.css');
-@import url('blocks/icon/icon-confirm-pass.css');
-@import url('blocks/icon/icon-mail.css');
-@import url('blocks/icon/icon-pass.css');
-@import url('blocks/icon/icon-user.css');
-@import url('blocks/icon/icon-clipboard.css');
-@import url('blocks/icon/icon-clock.css');
-@import url('blocks/input/input-invalid/input-invalid.css');
-@import url('blocks/icon/icon-submit.css');
-@import url('blocks/authorization/__title/_sign-in/authorization__title_sign-in.css');
-@import url('blocks/input/input-invalid/input-invalid.css');
-@import url('blocks/variables.css');
-@import url('blocks/authorization/__title/_restore-pass/authorization__title_restore-pass.css');
-@import url('blocks/authorization/__title-wrapper/authorization__title-wrapper.css');
-@import url('blocks/authorization/__title-img/authorization__title-img.css');
-@import url('blocks/authorization/__text/authorization__text.css');
-@import url('blocks/input/input-error/input-error.css');
-@import url('blocks/authorization/__submit/_disabled/authorization__submit_disabled.css');
-@import url('blocks/page/_clinic/page_clinic.css');
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/poppins-v15-latin-regular.eot');
+    src: local(''),
+    url('./fonts/poppins-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+    url('./fonts/poppins-v15-latin-regular.woff') format('woff'),
+    url('./fonts/poppins-v15-latin-regular.ttf') format('truetype'),
+    url('./fonts/poppins-v15-latin-regular.svg#Poppins') format('svg');
+}
 
 
-@import url('blocks/clinic/user/clinic__user-indicator.css');
-@import url('blocks/clinic/user/clinic__user-avatar.css');
-@import url('blocks/clinic/user/clinic__user.css');
-@import url('blocks/clinic/clinic__header.css');
-@import url('blocks/clinic/clinic__logo.css');
-@import url('blocks/clinic/user/clinic__user-info.css');
-@import url('blocks/clinic/user/clinic__user-name.css');
-@import url('blocks/clinic/user/clinic__user-type.css');
-@import url('blocks/clinic/clinic__content.css');
-@import url('blocks/clinic/clinic__content-nav.css');
-@import url('blocks/clinic/nav-btn/clinic__content-nav-btn.css');
-@import url('blocks/clinic/nav-btn/clinic__content-nav-btn_active.css');
-@import url('blocks/clinic/config/clinic__content-config.css');
-@import url('blocks/clinic/config/clinic__content-config-search.css');
-@import url('blocks/clinic/config/clinic__content-config-title.css');
-@import url('blocks/clinic/config/clinic__content-config-sort.css');
-@import url('blocks/clinic/config/clinic__content-config-wrapper.css');
-@import url('blocks/clinic/config/clinic__content-config-sort-text.css');
-@import url('blocks/clinic/clinic__cards.css');
-@import url('blocks/clinic/config/mobile/search-mobile.css');
-@import url('blocks/clinic/config/mobile/sort-mobile.css');
-
-@import url('blocks/card/card.css');
-@import url('blocks/card/client/card__client-avatar.css');
-@import url('blocks/card/client/card__client-btn.css');
-@import url('blocks/card/client/card__client-indicator.css');
-@import url('blocks/card/client/card__client-name.css');
-@import url('blocks/card/client/card__client-status.css');
-@import url('blocks/card/client/card__client.css');
-@import url('blocks/card/info/card__info-icon.css');
-@import url('blocks/card/info/card__info.css');
-@import url('blocks/card/info/card__info-message.css');
-@import url('blocks/card/info/card__info-time.css');
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/poppins-v15-latin-500.eot');
+    src: local(''),
+    url('./fonts/poppins-v15-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/poppins-v15-latin-500.woff2') format('woff2'),
+    url('./fonts/poppins-v15-latin-500.woff') format('woff'),
+    url('./fonts/poppins-v15-latin-500.ttf') format('truetype'),
+    url('./fonts/poppins-v15-latin-500.svg#Poppins') format('svg');
+}
 
 
-
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/poppins-v15-latin-600.eot');
+    src: local(''),
+    url('./fonts/poppins-v15-latin-600.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/poppins-v15-latin-600.woff2') format('woff2'),
+    url('./fonts/poppins-v15-latin-600.woff') format('woff'),
+    url('./fonts/poppins-v15-latin-600.ttf') format('truetype'),
+    url('./fonts/poppins-v15-latin-600.svg#Poppins') format('svg');
+}

@@ -1,0 +1,38 @@
+import React from 'react';
+import {
+  StyledCard,
+  StyledCardClient,
+  StyledCardClientAvatar,
+  StyledCardClientButton,
+  StyledCardClientIndicator,
+  StyledCardClientName,
+  StyledCardClientStatus,
+  StyledCardInfo,
+  StyledCardInfoClipboard,
+  StyledCardInfoClock, StyledCardInfoMessage,
+  StyledCardInfoTime,
+} from './CardStyles';
+
+const Card = function ({
+  name, status, time, message, avatar, type,
+}) {
+  return (
+    <StyledCard>
+      <StyledCardClient type={type}>
+        <StyledCardClientAvatar src={avatar} alt="avatar" />
+        <StyledCardClientName>{name}</StyledCardClientName>
+        <StyledCardClientStatus>{status}</StyledCardClientStatus>
+        {type === 'appointment' ? '' : <StyledCardClientIndicator />}
+        <StyledCardClientButton />
+      </StyledCardClient>
+      <StyledCardInfo>
+        <StyledCardInfoClock />
+        <StyledCardInfoTime>{time}</StyledCardInfoTime>
+        <StyledCardInfoClipboard />
+        <StyledCardInfoMessage>{message}</StyledCardInfoMessage>
+      </StyledCardInfo>
+    </StyledCard>
+  );
+};
+
+export default Card;
